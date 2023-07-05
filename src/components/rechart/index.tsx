@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import LineChartDiagram from "./linechart";
 import PieChartDiagram from "./piechart";
+import BarchartDiagram from "./barchart";
 
 const Rechart = () => {
     const [data, setData] = useState<{ name: string; number: number }[]>();
@@ -35,6 +36,7 @@ const Rechart = () => {
         <div className="flex gap-10">
             <LineChartDiagram data={data} />
             <PieChartDiagram data={data} />
+            <BarchartDiagram data={data} />
         </div>
     );
 };
