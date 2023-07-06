@@ -29,6 +29,7 @@ export default function Home() {
             <div className="flex flex-col gap-8">
                 <Nav href="/rechart" title="Rechart" />
                 <Nav href="/victory" title="Victory" />
+                <Nav href="/react-chartjs-2" title="React-Chartjs-2" />
             </div>
         </div>
     );
