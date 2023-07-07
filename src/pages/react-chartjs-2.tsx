@@ -5,7 +5,7 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 const ReactChartjs2 = () => {
     ChartJS.register(ArcElement, Tooltip, Legend);
     return (
-        <PageTemplate title="Rechart">
+        <PageTemplate title="React-Chartjs-2">
             <RC2Page />
         </PageTemplate>
     );

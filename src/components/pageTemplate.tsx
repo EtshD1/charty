@@ -13,7 +13,7 @@ const PageTemplate = ({
             <Head>
                 <title>Charts Demo - {title}</title>
             </Head>
-            <div className="flex gap-2 items-center ">
+            <div className="flex gap-4 items-center">
                 <Link
                     href="/"
                     className="text-blue-600 hover:underline bg-slate-950 px-1 rounded border border-solid border-slate-700"

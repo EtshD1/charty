@@ -10,6 +10,7 @@ import {
     Legend,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
+import { RC2Data } from ".";
 
 export const options = {
     plugins: {
@@ -23,21 +24,7 @@ export const options = {
     },
 };
 
-const labels = ["January", "February", "March", "April", "May", "June", "July"];
-
-export const data = {
-    labels,
-    datasets: [
-        {
-            label: "Dataset 1",
-            data: labels.map(() => Math.floor(Math.random() * 1000)),
-            borderColor: "rgb(255, 99, 132)",
-            backgroundColor: "rgba(255, 99, 132, 0.5)",
-        },
-    ],
-};
-
-const RC2LineDiagram = () => {
+const RC2LineDiagram = ({ data }: { data: RC2Data }) => {
     ChartJS.register(
         CategoryScale,
         LinearScale,

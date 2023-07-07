@@ -10,6 +10,7 @@ import {
     BarElement,
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
+import { RC2Data } from ".";
 
 export const options = {
     plugins: {
@@ -23,21 +24,7 @@ export const options = {
     },
 };
 
-const labels = ["January", "February", "March", "April", "May", "June", "July"];
-
-export const data = {
-    labels,
-    datasets: [
-        {
-            label: "Dataset 1",
-            data: labels.map(() => Math.floor(Math.random() * 1000)),
-            borderColor: "rgb(132, 99, 255)",
-            backgroundColor: "rgba(132, 99, 255, 0.5)",
-        },
-    ],
-};
-
-const RC2BarDiagram = () => {
+const RC2BarDiagram = ({ data }: { data: RC2Data }) => {
     ChartJS.register(
         CategoryScale,
         LinearScale,
