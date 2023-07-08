@@ -30,6 +30,7 @@ export default function Home() {
                 <Nav href="/rechart" title="Rechart" />
                 <Nav href="/victory" title="Victory" />
                 <Nav href="/react-chartjs-2" title="React-Chartjs-2" />
+                <Nav href="/nivo" title="Nivo" />
             </div>
         </div>
     );
